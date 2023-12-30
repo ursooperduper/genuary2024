@@ -9,7 +9,8 @@
 var f1, f2, f3, f4;
 
 function setup() {
-  createCanvas(800, 800);
+  let sketchCanvas = createCanvas(800, 800);
+  sketchCanvas.parent('sketchContainer');
 
   var p1 = 
   {

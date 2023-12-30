@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #010101;
+  background: linear-gradient(0deg, #010101, #211D2E);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+body{ 
+  font:16px "obvia", sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+  color: #e3e3e3;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "obvia", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #FFF;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  color: #727888;
+}
+
+.title {
+  font-size: 4em;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 0.8em;
+  /* margin-bottom: 0.1em; */
+  text-shadow: 1px 1px 3px #000;
+}
+
+.main {
+  width: 800px;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sketchContainer {
+  width: 800px;
+  height: 800px;
+  border: 8px solid #000000;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 120px;
+  /* height: 200px; */
+  margin-top: 80px;
+  color: #727888;
+
+  background-image: url("../assets/sooper-taggie.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #b854ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.gennav {
+  display: flex;
+  width: 800px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 8px;
+
+}
+
+.gen-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  min-height: 200px;
+  margin-top: 24px;
+  background-color: #35293f;
+  /* border: 1px solid white; */
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgb(15, 9, 19);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+h3 {
+  color: #727888;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 8px;
+}
+
+.learn {
+  padding-top: 80px;
+}
