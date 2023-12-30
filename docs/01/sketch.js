@@ -87,10 +87,6 @@ function draw() {
       drawParts();
     endLayer();
   pop();
-  // push();
-  //   translate(400,0);
-  //   b1.drawParts();
-  // pop();
   push();
     translate(602,0);
     beginLayer('3', 99,800);
