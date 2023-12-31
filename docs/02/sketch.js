@@ -9,6 +9,7 @@
 function setup(){
   // w = 800;
   w = min(windowWidth, windowHeight);
+  if (w> 800) w = 800;
   let sketchCanvas = createCanvas(w, w);
   sketchCanvas.parent('sketchContainer');
   pad = w/80;

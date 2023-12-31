@@ -50,6 +50,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 800px;
 }
 
 .layout {
@@ -59,10 +60,16 @@ h2 {
   align-items: center;
 }
 
+.header {
+  width: 100%;
+  max-width: 800px;
+  padding-right: 16px;
+}
 #sketchContainer {
   width: 100%;
+  max-width: 800px;
   /* height: 800px; */
-  border: 8px solid #000000;
+  /* border: 8px solid #000000; */
 }
 
 .footer {
@@ -92,6 +99,7 @@ a:hover {
 .gennav {
   display: flex;
   width: 100%;
+  max-width: 800px;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
@@ -105,6 +113,8 @@ a:hover {
   flex-wrap: wrap;
   margin-top: 40px;
   max-width: 80%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card {
