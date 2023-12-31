@@ -9,7 +9,9 @@
 var f1, f2, f3, f4;
 
 function setup() {
-  let sketchCanvas = createCanvas(800, 800);
+  w = min(windowWidth, windowHeight);
+  if (w> 800) w = 800;
+  let sketchCanvas = createCanvas(w, w);
   sketchCanvas.parent('sketchContainer');
 
   var p1 = 
@@ -17,7 +19,7 @@ function setup() {
     name:           "1",
                     // blue,           pink,           red,            orange,         yellow
     colors:         [[5,175,242,100], [242,128,170,100], [242,48,5,100], [242,149,68,100], [242,203,5,100]],
-    lifetime:       1000,
+    lifetime:       500,
     size:           [900,720],
     speed:          0.002,
     shape:          "ellipse2",
@@ -31,7 +33,7 @@ function setup() {
     name:           "2",
                     // blue,           pink,           red,            orange,         yellow
     colors:         [[5,175,242,100], [242,128,170,100], [242,48,5,100], [242,149,68,100], [242,203,5,100]],
-    lifetime:       1000,
+    lifetime:       500,
     size:           [720,500],
     speed:          0.002,
     shape:          "ellipse2",
@@ -45,7 +47,7 @@ function setup() {
     name:           "3",
                     // blue,           pink,           red,            orange,         yellow
     colors:         [[5,175,242,100], [242,128,170,100], [242,48,5,100], [242,149,68,100], [242,203,5,100]],
-    lifetime:       1000,
+    lifetime:       500,
     size:           [500,320],
     speed:          0.02,
     shape:          "ellipse2",
@@ -59,7 +61,7 @@ function setup() {
     name:           "4",
                     // blue,           pink,           red,            orange,         yellow
     colors:         [[5,175,242,100], [242,128,170,100], [242,48,5,100], [242,149,68,100], [242,203,5,100]],
-    lifetime:       1000,
+    lifetime:       500,
     size:           [320,280],
     speed:          0.02,
     shape:          "ellipse2",
@@ -77,37 +79,18 @@ function setup() {
 function draw() {
   background(22);
   translate(0,0);
-  beginLayer('1',396, 800)
+  beginLayer('1',w/2.2, w);
     drawParts();
   endLayer();
-
   push();
-    translate(400,0);
-    beginLayer('2', 198,800);
+    translate(w/2.2+4,0);
+    beginLayer('2', w/3,w);
       drawParts();
     endLayer();
   pop();
   push();
-    translate(602,0);
-    beginLayer('3', 99,800);
-      drawParts();
-    endLayer();
-  pop();
-  push();
-    translate(705,0);
-    beginLayer('4', 49,800);
-      drawParts();
-    endLayer();
-  pop();
-  push();
-    translate(758,0);
-    beginLayer('5', 26,800);
-      drawParts();
-    endLayer();
-  pop();
-  push();
-    translate(788,0);
-    beginLayer('6', 12,800);
+    translate(w/1.26 + 3,0);
+    beginLayer('3', w/3.5,w);
       drawParts();
     endLayer();
   pop();
@@ -118,13 +101,13 @@ function drawParts() {
   f1.Draw();
   f2.Draw();
   f3.Draw();
-  f4.Draw();
+  // f4.Draw();
   f1.Create();
   f2.Create();
   f3.Create();
-  f4.Create();
+  // f4.Create();
   f1.Step();
   f2.Step();
   f3.Step();
-  f4.Step();
+  // f4.Step();
 }
