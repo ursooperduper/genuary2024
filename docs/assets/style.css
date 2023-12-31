@@ -112,7 +112,7 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 40px;
-  max-width: 80%;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
 }
