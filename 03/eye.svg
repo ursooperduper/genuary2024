@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="739.1" height="739.1" viewBox="0 0 739.1 739.1">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle cx="369.55" cy="369.55" r="369.05" fill="#f2234b" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+    <g>
+      <path d="M369.55,222.13c-127.64,0-241.9,57.24-318.56,147.42,76.66,90.19,190.92,147.42,318.56,147.42s241.9-57.24,318.56-147.42c-76.66-90.19-190.92-147.42-318.56-147.42Z" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="369.55" cy="369.55" r="118.85" fill="#56cad6" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="369.55" cy="369.55" r="59.35" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
